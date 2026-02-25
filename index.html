@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say Entertainment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Using Roboto as a close match to the clean sans-serif in design if Helvetica is not available locally, 
+         but we will specify Helvetica Neue in CSS -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/say-logo.png" alt="Say Entertainment" style="height: 40px; width: auto;">
+            </a>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="events.html">Upcoming Events</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+            <a href="#bookings" class="btn-primary nav-cta">Bookings</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('images/home-bg.JPG');"></div>
+        <div class="hero-content container">
+            <h1>The Heartbeat of <br> Afro-twist</h1>
+            <p>Direct To Consumer By Say Entertainment</p>
+            <div class="hero-buttons">
+                <a href="#music" class="btn-primary"><i class="ri-play-fill"></i> Play Now</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Event Section -->
+    <section id="featured-event" class="featured-event">
+        <div class="container featured-layout">
+            <div class="date-badge">
+                <span class="day">13</span>
+                <span class="month">FEB</span>
+                <span class="year">2026</span>
+            </div>
+
+            <div class="featured-content">
+                <div class="event-meta">
+                    <span class="label">Next Upcoming Event</span>
+                    <div class="countdown" id="event-countdown">
+                        <div class="time-unit">
+                            <span class="number" id="days">00</span>
+                            <span class="label">DAYS</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="hours">00</span>
+                            <span class="label">HOURS</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="minutes">00</span>
+                            <span class="label">MINS</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="seconds">00</span>
+                            <span class="label">SECS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Song and Surf Festival w/ Caleb Hart 2026</h2>
+
+                <div class="featured-actions">
+                    <a href="events.html" class="btn-primary">Event Detail <i class="ri-arrow-right-line"></i></a>
+                    <a href="events.html" class="btn-secondary">All Upcoming Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <span class="section-tag">About Artist</span>
+                <h2>Who is say</h2>
+                <p>
+                    I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js &
+                    Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products
+                    to life.
+                </p>
+                <p>
+                    I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as
+                    a developer, taking on new challenges.
+                </p>
+                <a href="#" class="link-arrow">See More About Me <span class="arrow"><i
+                            class="ri-arrow-right-line"></i></span></a>
+            </div>
+            <div class="about-image">
+                <img src="images/about-image.JPG" alt="Who is Say">
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <video autoplay muted loop playsinline class="music-bg-video">
+            <source src="images/music-section-bg.mp4" type="video/mp4">
+        </video>
+        <div class="music-overlay"></div>
+        <div class="container music-layout">
+            <div class="music-content">
+                <span class="pill-tag">Latest Music Releases</span>
+                <h2>SAY Entertainment Music<br>Direct To Consumer.</h2>
+                <p>Curtiss King removed his music from streaming to go Direct To Consumer, emphasizing the value of art
+                    and genuine connections with fans. This support not only sustains his creative freedom but also
+                    fuels greater opportunities, helping grow his independent business and empowering more authentic,
+                    boundary-pushing music.</p>
+                <a href="#" class="btn-pink">View All <span class="icon"><i class="ri-flashlight-fill"></i></span></a>
+            </div>
+            <div class="music-grid">
+                <div class="album-card">
+                    <img src="images/album_cover_1.png" alt="Beige Ep">
+                    <div class="album-info-row">
+                        <div class="details">
+                            <h3>Beige Ep (2024)</h3>
+                            <p>Curtiss King & Iman Omari</p>
+                        </div>
+                        <a href="#" class="btn-outline-small">Listen Now</a>
+                    </div>
+                </div>
+                <div class="album-card">
+                    <img src="images/album_cover_2.png" alt="Beige Ep">
+                    <div class="album-info-row">
+                        <div class="details">
+                            <h3>Beige Ep (2024)</h3>
+                            <p>Curtiss King & Iman Omari</p>
+                        </div>
+                        <a href="#" class="btn-outline-small">Listen Now</a>
+                    </div>
+                </div>
+                <div class="album-card">
+                    <img src="images/album_cover_3.png" alt="Beige Ep">
+                    <div class="album-info-row">
+                        <div class="details">
+                            <h3>Beige Ep (2024)</h3>
+                            <p>Curtiss King & Iman Omari</p>
+                        </div>
+                        <a href="#" class="btn-outline-small">Listen Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Work Together Section -->
+    <section id="work-together" class="work-together parallax-bg"
+        style="background-image: url('images/work-withme-image.JPG');">
+        <div class="container work-content">
+            <h2>Want to work together?</h2>
+            <p class="subhead">Have a question? Want to collaborate or jam?</p>
+            <p class="desc">I'm based in Victoria, BC and accepting opportunities to perform on Vancouver Island, the
+                City of Vancouver and across the West Coast.</p>
+            <a href="mailto:contact@sayentertainment.com" class="btn-gold">Contact Me <i class="ri-mail-line"></i></a>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="images/say-logo.png" alt="Say Entertainment" style="height: 40px; width: auto;">
+                </a>
+                <p class="footer-tagline">Music. Vibes. Culture.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram" class="social-icon instagram">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok" class="social-icon tiktok">
+                        <i class="ri-tiktok-fill"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube" class="social-icon youtube">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                    <a href="mailto:contact@sayentertainment.com" aria-label="Email" class="social-icon email">
+                        <i class="ri-mail-fill"></i>
+                    </a>
+                    <a href="#" aria-label="Spotify" class="social-icon spotify">
+                        <i class="ri-spotify-fill"></i>
+                    </a>
+                    <a href="#" aria-label="Apple Music" class="social-icon apple">
+                        <i class="ri-apple-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Home</h4>
+                    <a href="#about">About</a>
+                    <a href="#music">Music</a>
+                    <a href="events.html">Upcoming Events</a>
+                </div>
+                <div class="link-column">
+                    <h4>Shop</h4>
+                    <a href="shop.html">Merch Store</a>
+                    <a href="#bookings">Bookings</a>
+                </div>
+                <div class="link-column team-list">
+                    <h4>Follow The Team</h4>
+                    <a href="#"><i class="ri-instagram-line"></i> Alvin <span>(Guitarist/Producer)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Jayden Brown <span>(Producer/Videographer)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Rowan Farintosh <span>(Saxophone)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Daniel Sar <span>(Bass/Guitarist)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Sasha Ilnyckyj <span>(Keyboard)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Rue <span>(Creative Head/Admin)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Emmanuel <span>(Photography)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Shanise <span>(Musician/Vocal Coach)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Maddy <span>(Videography/Photography)</span></a>
+                </div>
+            </div>
+
+            <!-- Moved Community Form -->
+            <div class="footer-community">
+                <h4>Join Our Community</h4>
+                <form class="footer-subscribe">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Say Entertainment. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

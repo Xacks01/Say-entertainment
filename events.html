@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say Entertainment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Using Roboto as a close match to the clean sans-serif in design if Helvetica is not available locally, 
+         but we will specify Helvetica Neue in CSS -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Say Entertainment</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#music">Music</a></li>
+                <li><a href="events.html" class="active">Upcoming Events</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+            <a href="index.html#bookings" class="btn-primary">Bookings</a>
+        </div>
+    </nav>
+
+    <!-- Featured Event Hero (Events Page Specific) -->
+    <section class="events-hero">
+        <div class="container hero-layout">
+            <div class="hero-image">
+                <img src="images/hero_bg.png" alt="Featured Event">
+            </div>
+            <div class="hero-info">
+                <span class="pill-tag">Next Event</span>
+                <h1>Song and Surf Festival 2026</h1>
+                <p class="date">FEB 13, 2026</p>
+                <p class="desc">Join us for the ultimate afro-twist experience. Live performances, exclusive merch, and
+                    good vibes.</p>
+                <a href="#" class="btn-primary">Purchase Ticket</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Grid -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+            </div>
+
+            <div class="events-list">
+                <!-- Upcoming -->
+                <div class="event-item card">
+                    <img src="images/album_cover_1.png" alt="Event Thumbnail" class="event-thumb">
+                    <div class="event-content">
+                        <div class="event-date-badge">AUG 25</div>
+                        <h3>Summer Vibes Fest</h3>
+                        <p class="location">Los Angeles, CA</p>
+                        <a href="#" class="btn-purchase">Purchase Ticket</a>
+                    </div>
+                </div>
+                <div class="event-item card">
+                    <img src="images/album_cover_2.png" alt="Event Thumbnail" class="event-thumb">
+                    <div class="event-content">
+                        <div class="event-date-badge">SEP 12</div>
+                        <h3>Neon Nights Tour</h3>
+                        <p class="location">New York, NY</p>
+                        <a href="#" class="btn-purchase">Purchase Ticket</a>
+                    </div>
+                </div>
+                <div class="event-item card">
+                    <img src="images/album_cover_3.png" alt="Event Thumbnail" class="event-thumb">
+                    <div class="event-content">
+                        <div class="event-date-badge">OCT 05</div>
+                        <h3>Afro-Twist Showcase</h3>
+                        <p class="location">Atlanta, GA</p>
+                        <a href="#" class="btn-purchase">Purchase Ticket</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Events -->
+            <div class="past-events">
+                <h3>Past / Concluded Events</h3>
+                <div class="events-list">
+                    <div class="event-item card past">
+                        <img src="images/album_cover_4.png" alt="Event Thumbnail" class="event-thumb">
+                        <div class="event-content">
+                            <div class="event-date-badge">JUN 10</div>
+                            <h3>Rooftop Sessions</h3>
+                            <p class="location">Chicago, IL</p>
+                            <span class="status">Sold Out</span>
+                        </div>
+                    </div>
+                    <div class="event-item card past">
+                        <img src="images/hero_bg.png" alt="Event Thumbnail" class="event-thumb">
+                        <div class="event-content">
+                            <div class="event-date-badge">MAY 15</div>
+                            <h3>Spring Fling</h3>
+                            <p class="location">Miami, FL</p>
+                            <span class="status">Concluded</span>
+                        </div>
+                    </div>
+                    <div class="event-item card past">
+                        <img src="images/album_cover_1.png" alt="Event Thumbnail" class="event-thumb">
+                        <div class="event-content">
+                            <div class="event-date-badge">APR 20</div>
+                            <h3>Jazz in the Park</h3>
+                            <p class="location">Austin, TX</p>
+                            <span class="status">Concluded</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Removed Shop Section -->
+
+    <!-- Footer CTA -->
+    <!-- Work Together Section -->
+    <section id="work-together" class="work-together parallax-bg"
+        style="background-image: url('images/work-withme-image.JPG');">
+        <div class="container work-content">
+            <h2>Want to work together?</h2>
+            <p class="subhead">Have a question? Want to collaborate or jam?</p>
+            <p class="desc">I'm based in Victoria, BC and accepting opportunities to perform on Vancouver Island, the
+                City of Vancouver and across the West Coast.</p>
+            <a href="mailto:contact@sayentertainment.com" class="btn-gold">Contact Me <i class="ri-mail-line"></i></a>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="images/say-logo.png" alt="Say Entertainment" style="height: 40px; width: auto;">
+                </a>
+                <p class="footer-tagline">Music. Vibes. Culture.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram" class="social-icon instagram">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok" class="social-icon tiktok">
+                        <i class="ri-tiktok-fill"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube" class="social-icon youtube">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                    <a href="mailto:contact@sayentertainment.com" aria-label="Email" class="social-icon email">
+                        <i class="ri-mail-fill"></i>
+                    </a>
+                    <a href="#" aria-label="Spotify" class="social-icon spotify">
+                        <i class="ri-spotify-fill"></i>
+                    </a>
+                    <a href="#" aria-label="Apple Music" class="social-icon apple">
+                        <i class="ri-apple-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Home</h4>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#music">Music</a>
+                    <a href="events.html">Upcoming Events</a>
+                </div>
+                <div class="link-column">
+                    <h4>Shop</h4>
+                    <a href="shop.html">Merch Store</a>
+                    <a href="index.html#bookings">Bookings</a>
+                </div>
+                <div class="link-column team-list">
+                    <h4>Follow The Team</h4>
+                    <a href="#"><i class="ri-instagram-line"></i> Alvin <span>(Guitarist/Producer)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Jayden Brown <span>(Producer/Videographer)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Rowan Farintosh <span>(Saxophone)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Daniel Sar <span>(Bass/Guitarist)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Sasha Ilnyckyj <span>(Keyboard)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Rue <span>(Creative Head/Admin)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Emmanuel <span>(Photography)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Shanise <span>(Musician/Vocal Coach)</span></a>
+                    <a href="#"><i class="ri-instagram-line"></i> Maddy <span>(Videography/Photography)</span></a>
+                </div>
+            </div>
+
+            <div class="footer-community">
+                <h4>Join Our Community</h4>
+                <form class="footer-subscribe">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Say Entertainment. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
