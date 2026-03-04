@@ -301,6 +301,15 @@ h4 {
     z-index: -1;
 }
 
+/* iOS Fix: background-attachment: fixed causes zoom/blur on iOS Devices */
+@supports (-webkit-touch-callout: none) {
+
+    .hero-bg,
+    .parallax-bg {
+        background-attachment: scroll;
+    }
+}
+
 .hero-bg::after {
     content: '';
     position: absolute;
@@ -828,6 +837,12 @@ h4 {
     opacity: 0.7;
     filter: grayscale(0.5);
     transition: 0.3s;
+}
+
+.event-item.card.past .event-thumb {
+    height: auto;
+    object-fit: contain;
+    background: #000;
 }
 
 .event-item.card.past:hover {
@@ -1434,5 +1449,212 @@ h4 {
 
     .featured-actions {
         flex-direction: column;
+    }
+}
+
+/* Listen Page Styles */
+.listen-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.listen-bg-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(50px) brightness(0.7);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.listen-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    z-index: 1;
+}
+
+.listen-art {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 24px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.listen-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.listen-art .play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+    opacity: 0.9;
+}
+
+.listen-info {
+    margin-bottom: 32px;
+}
+
+.listen-info h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.listen-info p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item:hover {
+    background: #f9f9f9;
+}
+
+.service-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.service-brand i {
+    font-size: 1.8rem;
+}
+
+.service-brand img {
+    height: 24px;
+    width: auto;
+}
+
+.service-brand span {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.btn-service {
+    padding: 8px 24px;
+    background: #f0f0f0;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.service-item:hover .btn-service {
+    background: #333;
+    color: #fff;
+}
+
+.listen-footer {
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    line-height: 1.6;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listen-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.brand-spotify {
+    color: #1DB954;
+}
+
+.brand-apple {
+    color: #FC3C44;
+}
+
+.brand-amazon {
+    color: #00A8E1;
+}
+
+.brand-deezer {
+    color: #A238FF;
+}
+
+.brand-youtube {
+    color: #FF0000;
+}
+
+.brand-audiomack {
+    color: #FFA200;
+}
+
+/* Listen Page Mobile Responsive */
+@media (max-width: 480px) {
+    .listen-art {
+        width: 180px;
+        height: 180px;
+    }
+
+    .listen-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .service-item {
+        padding: 12px 18px;
+    }
+
+    .service-brand i {
+        font-size: 1.5rem;
+    }
+
+    .service-brand span {
+        font-size: 0.95rem;
+    }
+
+    .btn-service {
+        padding: 6px 16px;
+        font-size: 0.75rem;
     }
 }
