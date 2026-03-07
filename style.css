@@ -144,6 +144,8 @@ h4 {
     letter-spacing: 0.5px;
     font-size: 1rem;
     border: 1px solid var(--md-sys-color-on-surface-variant);
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Dark overlay for visibility */
     transition: 0.3s;
 }
 
@@ -200,6 +202,38 @@ h4 {
 .nav-links {
     display: flex;
     gap: 30px;
+}
+
+.nav-links a {
+    position: relative;
+    padding: 5px 0;
+    font-weight: 500;
+    color: #aeaeae;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--md-sys-color-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.nav-links a:hover::after,
+.nav-links li.active a::after {
+    width: 100%;
+}
+
+.nav-links li.active a {
+    color: #fff;
 }
 
 /* Hamburger Menu Toggle */
