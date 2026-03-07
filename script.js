@@ -45,3 +45,34 @@ if (countdownContainer) {
     setInterval(updateCountdown, 1000);
     updateCountdown();
 }
+
+// ScrollSpy Logic - Active Navigation Link on Scroll
+const sections = document.querySelectorAll('section[id], header[id]');
+const navLinksAnchors = document.querySelectorAll('.nav-links a');
+
+const scrollSpyOptions = {
+    threshold: 0.5 // Trigger when 50% of the section is in view
+};
+
+const scrollSpyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+
+            // Remove active class from all li items
+            document.querySelectorAll('.nav-links li').forEach(li => {
+                li.classList.remove('active');
+            });
+
+            // Add active class to the li containing the link to the current section
+            const activeLink = document.querySelector(`.nav-links a[href*="#${id}"]`);
+            if (activeLink) {
+                activeLink.parentElement.classList.add('active');
+            }
+        }
+    });
+}, scrollSpyOptions);
+
+sections.forEach(section => {
+    scrollSpyObserver.observe(section);
+});
