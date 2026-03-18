@@ -193,10 +193,13 @@ h4 {
 }
 
 .logo {
-    font-family: 'Brush Script MT', cursive;
-    /* Placeholder for signature style logo */
-    font-size: 1.8rem;
-    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
 }
 
 .nav-links {
@@ -634,9 +637,9 @@ h4 {
 
 .music-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    /* Smaller compact cards */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 550px; /* Limits the size of the 2x2 grid for a "cuter" look */
 }
 
 .shop-grid {
@@ -655,6 +658,7 @@ h4 {
 .album-card {
     background: transparent;
     transition: 0.3s;
+    width: 100%;
 }
 
 .album-card img {
@@ -1209,7 +1213,7 @@ h4 {
 }
 
 .footer-branding .footer-logo img {
-    height: 40px;
+    height: 55px;
     width: auto;
     margin-bottom: 20px;
 }
@@ -1258,7 +1262,8 @@ h4 {
 }
 
 .footer-btn-outline {
-    display: inline-block;
+    display: block;
+    text-align: center;
     padding: 12px 24px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
@@ -1394,7 +1399,7 @@ h4 {
     }
 
     .music-grid {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
