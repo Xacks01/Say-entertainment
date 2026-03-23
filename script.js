@@ -25,7 +25,7 @@ if (countdownContainer) {
     const secondsEl = document.getElementById('seconds');
 
     function updateCountdown() {
-        const targetDate = new Date('March 22, 2026 00:00:00').getTime();
+        const targetDate = new Date('March 28, 2026 10:00:00').getTime();
         const now = new Date().getTime();
         const difference = targetDate - now;
 

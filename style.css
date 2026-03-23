@@ -1262,15 +1262,15 @@ h4 {
 }
 
 .footer-btn-outline {
-    display: block;
-    text-align: center;
-    padding: 12px 24px;
+    display: table;
+    width: fit-content;
+    padding: 7px 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     margin-top: 15px;
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     transition: 0.3s;
 }
 
